@@ -24,7 +24,7 @@ public class UserController {
         Repo.save(data);
         return "Added User with id : " +data.getUserID();
     }
-    @GetMapping("/UserGet")
+    @GetMapping("/")
     public List<model>getList(){
         return Repo.findAll();
     }
