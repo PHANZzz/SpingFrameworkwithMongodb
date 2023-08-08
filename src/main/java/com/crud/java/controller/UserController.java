@@ -15,7 +15,7 @@ import java.util.Optional;
 
 import com.crud.java.model.model;
 import com.crud.java.repository.repo;
-@CrossOrigin(origins = "https://crud-spring-git-main-phanzzz.vercel.app")
+@CrossOrigin(origins = "https://crud-spring.vercel.app")
 
 @RestController
 public class UserController {
