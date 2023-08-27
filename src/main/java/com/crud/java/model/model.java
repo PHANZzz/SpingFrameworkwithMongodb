@@ -25,9 +25,7 @@ public class model {
     public String getId(int userID){
      return Integer.toString(this.userID);
     }
-    public void setUserID(int UserID){
-        this.userID=UserID;
-    }
+
     public void setUsername(String Username){
         this.Username=Username;
     }
