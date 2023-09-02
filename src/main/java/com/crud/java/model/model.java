@@ -11,25 +11,30 @@ import lombok.ToString;
 @Setter
 @ToString
 
-@Document(collection = "Users")
+@Document(collection = "Contact")
 public class model {
     @Id
-    private int userID;
-    private String Username;
-    private String address;
-    public  model(int userID,String Username,String address){
+    public int userID=0;
+    private String email;
+    private String message;
+    private String subject;
+    public  model(int userID,String email,String message,String subject){
         this.userID=userID;
-        this.Username=Username;
-        this.address=address;
+        this.email=email;
+        this.message=message;
+        this.subject=subject;
     }
     public String getId(int userID){
      return Integer.toString(this.userID);
     }
 
-    public void setUsername(String Username){
-        this.Username=Username;
+    public void setUsername(String email){
+        this.email=email;
     }
-    public void setAddress(String address){
-        this.address=address;
+    public void setAddress(String message){
+        this.message=message;
+    }
+    public void setSubject(String subject){
+        this.subject=subject;
     }
 }
