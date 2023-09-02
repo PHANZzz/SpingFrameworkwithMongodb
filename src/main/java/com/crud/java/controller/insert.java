@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.crud.java.model.model;
 import com.crud.java.repository.repo;
 
-@CrossOrigin(origins ="ecommerce-project-beta-swart.vercel.app")
+@CrossOrigin(origins ="https://ecommerce-project-beta-swart.vercel.app")
 
 @RestController
 public class insert {
